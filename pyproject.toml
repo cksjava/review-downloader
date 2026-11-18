@@ -1,0 +1,16 @@
+[project]
+name = "playreviews"
+version = "1.0.0"
+description = "Download Google Play app listings and reviews one page at a time."
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.scripts]
+playreviews = "playreviews.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["playreviews*"]
